@@ -147,7 +147,9 @@
      font-size: 18px;
   }
 
-  /* Section 3 : Testimony  */
+  /* Section 2 : Skills section end  */
+
+  /* Section 3 : Testimony  start */
   .testimony-section{
        padding: 0 50px;
        margin-bottom: 100px;
@@ -179,7 +181,7 @@
 
 }
 
-.testimony-section .group .person-details  p{
+.testimony-section .group .person-details  p {
    font-weight: 600;
 
 }
@@ -188,6 +190,67 @@
     flex: 8;
     
 }
+
+/* Section 3 : Testimony  end */
+
+/* Section 4:Contact  start */
+
+.contact-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.contact-section h2{
+    font-size: 35px;
+   
+}
+
+.contact-section .group{
+    display: flex;
+    gap: 50px;
+   
+}
+
+.contact-section .group .text {
+    flex: 3;   
+    margin-top: 20px;
+   
+}
+
+.contact-section .group form {
+    flex: 3;   
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea{
+    font-family: 'poppins',sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline:none;
+    resize: none;
+}
+
+.contact-section .group form button {
+    font-size: 16px;
+    font-family: 'poppins',sans-serif;
+    color:#fff;
+    background-color: var(--link-color);
+    border:none;
+    height:50px;
+    cursor: pointer;
+}
+
+.contact-section .group form button:hover {
+  filter:brightness(.9);
+  transition: .1s;
+}
+
+/* Section 4:Contact  end */
 
 
 
@@ -216,6 +279,14 @@
         flex-direction: column;
       }
 
+     /* Section 4: Contact  */ 
+     .contact-section .group {
+        flex-direction: column;
+      }
+
+    }  
+    
+
 
   
   @media (max-width:600px){
@@ -241,4 +312,3 @@
     }
   }
 
-/* Navbar end  */
